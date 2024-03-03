@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+:root{
+    --bgColor:#080e1c;
+    --TextWhite:#fff;
+
+}
+.white-theme{
+    --bgColor:#fff;
+    --TextWhite:#080e1c;
+}
+.hero{
+    background-color: var(--bgColor);
+    height: 100vh;
+    overflow: hidden;
+}
+.hero header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.hero header nav .logo{
+    color:var(--TextWhite);
+    font-size: 35px;
+    font-weight: bold;
+}
+.hero header nav .logo span{
+    color: #23a3ef;
+}
+.hero header nav .nav-links a{
+    color: var(--TextWhite);
+    margin: 0 30px;
+    transition: 0.3s;
+}
+.hero header nav .nav-links a:hover{
+    color: #23a3ef;
+}
+.hero header nav .btn-mode{
+    color: var(--TextWhite);
+    font-size: 25px;
+    /*cursor: pointer;*/
+}
+.hero .container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    height: calc(100vh - 100px);
+    position: relative;
+}
+.hero .container .div-text{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+.hero .container .div-img{
+    position: absolute;
+    width: 50%;
+    bottom: 70px;
+    margin-right: 50px;
+   
+}
+.hero .container .div-img img{
+    width: 100%;
+   
+}
+.hero .container .div-text h4{
+    color: #888;
+    font-size: 22px;
+}
+.hero .container .div-text h1{
+    color: var(--TextWhite);
+    font-size: 60px;
+    margin: 15px 0 10px;
+}
+.hero .container .div-text span{
+    color: #23a3ef;
+    font-size: 25px;
+    font-weight: bold;
+}
+.hero .container .div-text p{
+    color: var(--TextWhite);
+    line-height: 1;
+    margin: 20px 0 40px;
+}
+.hero .container .div-text .btn{
+    color: #fff;
+    background-color: #23a3ef;
+    padding: 15px 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 0;
+    transition: 0.3s;
+}
+.hero .container .div-text .btn:hover{
+    top: -8px;
+    box-shadow: 0 0 16px #23a3ef;
+}
+.social-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.social-icon a{
+    color: #23a3ef;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.social-icon a:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+
